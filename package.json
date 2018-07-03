@@ -28,6 +28,7 @@
     "@angular/platform-server": "^6.0.7",
     "@angular/router": "^6.0.3",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
+    "angular-particle": "^1.0.4",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
     "particles.js": "^2.0.0",
