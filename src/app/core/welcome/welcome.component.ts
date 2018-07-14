@@ -16,11 +16,10 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit() {
     this.width = 100;
-    this.height = 100;
+    this.height = 80;
     this.myStyles = {
       'position': 'fixed',
       'width': '100%',
-      'height': '100%',
       'z-index': -1,
       'top': 0,
       'left': 0,
@@ -30,16 +29,16 @@ export class WelcomeComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 80,
+          value: 120,
         },
         color: {
           value: '#03DAC5'
         },
         shape: {
-          type: 'triangle'
-        },
-        line_linked: {
-          enabled: false
+          type: 'star',
+          size: {
+            value: 15
+          }
         }
       }
     };

@@ -1,6 +1,195 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="landing">
-  <app-welcome></app-welcome>
+<!-- navbar -->
+<header>
+  <nav class="nav-wrapper transparent">
+    <div class="container">
+      <a href="#" class="brand-logo">Portfolio App</a>
+      <a href="" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#getStarted">Get Started</a>
+        </li>
+        <li>
+          <a href="#getPro">Get Pro</a>
+        </li>
+        <li>
+          <a href="#connect">Connect</a>
+        </li>
+      </ul>
+      <ul class="sidenav grey lighten-5" id="mobile-menu">
+        <li>
+          <a href="#getStarted">Get Started</a>
+        </li>
+        <li>
+          <a href="#getPro">Get Pro</a>
+        </li>
+        <li>
+          <a href="#connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- photo / grid -->
+
+<section class="container section scrollspy" id="getStarted">
+  <div class="row">
+    <div class="col s12 l4">
+      <img src="../assets/img/portrait.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <h2 class="indigo-text text-darken-4">Portraits</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod culpa consequatur corporis veniam sint
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4 push-l8">
+      <img src="../assets/img/city.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 pull-l4 right-align">
+      <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod culpa consequatur corporis veniam sint
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4">
+      <img src="../assets/img/nature.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <h2 class="indigo-text text-darken-4">Nature</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod culpa consequatur corporis veniam sint
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="../assets/img/street.jpg" alt="stars" class="responsive-img">
+  </div>
 </div>
 
-<router-outlet></router-outlet>
+<!-- services / tabs -->
+<section class="container section scrollspy" id="getPro">
+  <div class="row">
+    <div class="col s12 l4">
+      <h2 class="indigo-text text-darken-4">What I do...</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi labore ullam porro id deserunt laudantium hic accusamus
+        quidem temporibus unde laboriosam iste tempore iure quasi neque omnis saepe, ut reprehenderit.</p>
+    </div>
+    <div class="col s12 l6 offset-l2">
+      <ul class="tabs">
+        <li class="tab col s6">
+          <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+        </li>
+        <li class="tab col s6">
+          <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+        </li>
+      </ul>
+      <div class="col s12" id="photography">
+        <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi labore ullam porro id deserunt laudantium hic accusamus
+          quidem temporibus unde laboriosam iste tempore iure quasi neque omnis saepe, ut reprehenderit.</p>
+      </div>
+      <div class="col s12" id="editing">
+        <p class="flow-text indigo-text text-darken-4">EDITING</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi labore ullam porro id deserunt laudantium hic accusamus
+          quidem temporibus unde laboriosam iste tempore iure quasi neque omnis saepe, ut reprehenderit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="../assets/img/stars.jpg" alt="stars" class="responsive-img">
+  </div>
+</div>
+<!-- contact form -->
+<section class="container section scrollspy" id="connect">
+  <div class="row">
+    <div class="col s12 l5">
+      <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi labore ullam porro id deserunt laudantium hic accusamus
+        quidem temporibus unde laboriosam iste tempore iure quasi neque omnis saepe, ut reprehenderit.</p>
+    </div>
+    <div class="col s12 l5 offset-l2">
+      <form action="">
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email">
+          <label for="email">Your Email</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" rows="3" class="materialize-textarea"></textarea>
+          <label for="message">Your message</label>
+        </div>
+        <div class="input-field">
+          <input type="text" class="datepicker" id="date">
+          <label for="date">When do you want my service?</label>
+        </div>
+        <div class="input-field">
+          <p class="indigo-text text-darken-4">Services Required: </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Photography</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Editing</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6">
+        <h5>About Me</h5>
+        <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, accusantium magnam repellendus perspiciatis eos
+          totam excepturi quis perferendis sint temporibus, dolores porro dignissimos! Nisi architecto enim voluptatem ex
+          sint iste!</p>
+      </div>
+      <div class="col s12 l4 offset-l2">
+        <h5>Connect</h5>
+        <ul>
+          <li>
+            <a href="" class="grey-text text-lighten-2">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="grey-text text-lighten-2">Twitter</a>
+          </li>
+          <li>
+            <a href="" class="grey-text text-lighten-2">LinkedIn</a>
+          </li>
+          <li>
+            <a href="" class="grey-text text-lighten-2">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">
+      &copy; 2018 Ishanz Eye
+    </div>
+  </div>
+</footer>
+<router-outlet>
+</router-outlet>
